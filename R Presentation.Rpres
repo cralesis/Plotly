@@ -14,7 +14,7 @@ Create a web page presentation using R Markdown that features a plot created wit
 ========================================================
 
 ```{r}
-data("presidents")
+data("cars")
 library(plotly)
 
 ```
@@ -23,5 +23,5 @@ Slide With Plot
 ========================================================
 
 ```{r, echo=FALSE}
-plot_ly(x=time(presidents), y=presidents, type="bar")
+plot_ly(x=mtcars$cyl, y=mtcars$mpg, type="box")
 ```
